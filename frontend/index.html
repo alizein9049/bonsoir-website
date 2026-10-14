@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#32000C" />
+    <meta name="description" content="Bonsoir café menu" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Proposed typography (pending approval): Poppins for headings, Inter for text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+    />
+
+    <!-- Follow the device light/dark setting before first paint (no flash),
+         and keep Bootstrap's components in sync via data-bs-theme. -->
+    <script>
+      (function () {
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        function apply() {
+          document.documentElement.setAttribute('data-bs-theme', mq.matches ? 'dark' : 'light');
+        }
+        apply();
+        if (mq.addEventListener) mq.addEventListener('change', apply);
+      })();
+    </script>
+    <title>Bonsoir</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Please enable JavaScript to view the Bonsoir menu.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

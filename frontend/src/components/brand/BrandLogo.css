@@ -1,0 +1,22 @@
+.bn-logo {
+  display: inline-block;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #000; /* matches the logo's own dark rim while loading */
+  box-shadow:
+    0 0 0 1px var(--bn-logo-ring),
+    var(--bn-logo-shadow);
+}
+
+.bn-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bn-logo--sm { width: 48px; }
+.bn-logo--md { width: 112px; }
+.bn-logo--lg { width: clamp(200px, 64vw, 320px); }

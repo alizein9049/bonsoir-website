@@ -1,0 +1,10 @@
+.bn-menu-footer {
+  margin-top: 3rem;
+  padding: 2rem 0 max(2rem, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--bn-on-bg-divider);
+}
+.bn-menu-footer__copy {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--bn-on-bg);
+}

@@ -1,0 +1,8 @@
+.bn-options { margin: 0 0 1.25rem; padding: 0; border: 0; min-width: 0; }
+.bn-options legend { float: none; width: auto; }
+.bn-options__list { list-style: none; margin: 0 0 0.5rem; padding: 0; display: grid; gap: 0.5rem; }
+.bn-options__row { display: grid; grid-template-columns: 120px 1fr auto; gap: 0.5rem; align-items: start; }
+@media (max-width: 420px) {
+  .bn-options__row { grid-template-columns: 1fr auto; }
+  .bn-options__type { grid-column: 1 / -1; }
+}

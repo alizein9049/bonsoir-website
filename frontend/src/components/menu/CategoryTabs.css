@@ -1,0 +1,61 @@
+/* The only sticky element on the menu page (approved). */
+.bn-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bn-bg) 92%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--bn-on-bg-divider);
+}
+.bn-tabs__inner {
+  padding-inline: 0;
+}
+.bn-tabs__scroller {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.65rem 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-padding-inline: 24px;
+  /* soft fade on the right hints that more tabs follow */
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+.bn-tabs__scroller::-webkit-scrollbar { display: none; }
+
+.bn-tab {
+  flex: 0 0 auto;
+  min-height: var(--bn-touch);
+  padding: 0 1.1rem;
+  border-radius: var(--bn-radius-pill);
+  border: 1.5px solid var(--bn-on-bg-border);
+  background: transparent;
+  color: var(--bn-on-bg);
+  font-family: var(--bn-font-body);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.18s, color 0.18s, border-color 0.18s;
+}
+.bn-tab:hover {
+  border-color: var(--bn-on-bg);
+  background: var(--bn-on-bg-hover);
+}
+/* Selected tab: brand green with white text (6.3:1) on the dark-red bar. */
+.bn-tab.is-active {
+  background: var(--bn-green);
+  border-color: #9bc97a; /* light-green edge keeps the selected tab clearly visible on dark red */
+  color: #fff;
+}
+
+/* Desktop: all nine usually fit, so centre them and drop the fade. */
+@media (min-width: 1024px) {
+  .bn-tabs__scroller {
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}

@@ -1,0 +1,27 @@
+.bn-hero__frame {
+  padding: 0;
+}
+.bn-hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  max-height: 300px;
+  object-fit: cover;
+  background: #1c1714;
+}
+@media (min-width: 640px) {
+  .bn-hero__frame {
+    max-width: 960px;
+    padding: 0 1rem;
+  }
+  .bn-hero__img {
+    aspect-ratio: 2 / 1;
+    max-height: none;
+    border-radius: var(--bn-radius);
+    box-shadow: 0 18px 40px -20px rgba(43, 33, 28, 0.6);
+  }
+}
+@media (min-width: 992px) {
+  .bn-hero__frame { padding: 0; }
+}

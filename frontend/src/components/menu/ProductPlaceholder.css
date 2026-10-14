@@ -1,0 +1,16 @@
+.bn-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--bn-gold);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(217, 164, 65, 0.16), transparent 70%),
+    var(--bn-placeholder-bg);
+}
+.bn-placeholder svg {
+  width: 42%;
+  max-width: 72px;
+  height: auto;
+  opacity: 0.9;
+}

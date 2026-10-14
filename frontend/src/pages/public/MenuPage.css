@@ -1,0 +1,75 @@
+.bn-menu-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.bn-menu-main {
+  flex: 1;
+}
+
+.bn-section-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0 0 0.875rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.bn-section-count {
+  font-family: var(--bn-font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--bn-on-bg);
+}
+
+.bn-menu-panel {
+  padding-top: 1.25rem;
+  outline-offset: -3px;
+}
+.bn-menu-panel:focus:not(:focus-visible) { outline: none; }
+.bn-menu-panel__content {
+  animation: bn-panel-in 0.28s var(--bn-ease) both;
+}
+@keyframes bn-panel-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Product grid: 1 column on phones (compact rows), 2 on tablet, 3–4 on desktop. */
+.bn-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 640px) {
+  .bn-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+}
+@media (min-width: 1024px) {
+  .bn-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+}
+@media (min-width: 1400px) {
+  .bn-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.bn-menu-empty,
+.bn-menu-state {
+  color: var(--bn-on-bg);
+}
+.bn-menu-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 3rem;
+  text-align: center;
+}
+.bn-menu-state .spinner-border { color: var(--bn-on-bg); }
+
+.bn-btn-touch {
+  min-height: var(--bn-touch);
+  padding-inline: 1.25rem;
+  border-radius: var(--bn-radius-pill);
+}

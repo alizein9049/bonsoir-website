@@ -1,0 +1,27 @@
+.bn-dialog {
+  width: min(92vw, 420px);
+  padding: 1.5rem;
+  border: 1px solid var(--bn-admin-border);
+  border-radius: 16px;
+  background: var(--bn-admin-surface);
+  color: var(--bn-admin-text);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
+}
+.bn-dialog::backdrop {
+  background: rgba(20, 16, 14, 0.55);
+}
+.bn-dialog__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.bn-dialog__body {
+  color: var(--bn-admin-muted);
+  font-size: 0.95rem;
+}
+.bn-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}

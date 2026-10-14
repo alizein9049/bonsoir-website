@@ -1,0 +1,66 @@
+/* Desktop: centred modal. Phones: full-screen sheet. */
+.bn-sheet {
+  width: min(94vw, 720px);
+  max-height: min(92vh, 900px);
+  padding: 0;
+  border: 1px solid var(--bn-admin-border);
+  border-radius: 18px;
+  background: var(--bn-admin-surface);
+  color: var(--bn-admin-text);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+.bn-sheet::backdrop { background: rgba(20, 16, 14, 0.55); }
+.bn-sheet__form {
+  display: flex;
+  flex-direction: column;
+  max-height: inherit;
+}
+.bn-sheet__head,
+.bn-sheet__foot {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--bn-admin-surface);
+}
+.bn-sheet__head { border-bottom: 1px solid var(--bn-admin-border); justify-content: space-between; }
+.bn-sheet__foot { border-top: 1px solid var(--bn-admin-border); justify-content: flex-end; flex-wrap: wrap; }
+.bn-sheet__title { margin: 0; font-size: 1.25rem; font-weight: 600; }
+.bn-sheet__close {
+  width: var(--bn-touch);
+  height: var(--bn-touch);
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--bn-admin-border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--bn-admin-text);
+}
+.bn-sheet__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem;
+}
+.bn-save { min-width: 9rem; font-weight: 600; }
+.bn-error-summary { font-size: 0.9rem; }
+.bn-switch--form { justify-content: flex-start; }
+.bn-sheet .bn-switch { display: inline-flex; align-items: center; gap: 0.6rem; min-height: var(--bn-touch); padding-left: 0; margin: 0; }
+.bn-sheet .bn-switch .form-check-input { float: none; margin: 0; width: 46px; height: 26px; cursor: pointer; }
+.bn-sheet .input-group-text { background: var(--bn-admin-bg); border-color: var(--bn-admin-border); color: var(--bn-admin-muted); }
+
+@media (max-width: 575.98px) {
+  .bn-sheet {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+  .bn-sheet__form { height: 100%; max-height: 100%; }
+  .bn-sheet__head { padding-top: max(0.85rem, env(safe-area-inset-top)); }
+  .bn-sheet__foot { padding-bottom: max(0.85rem, env(safe-area-inset-bottom)); }
+  .bn-sheet__foot .btn { flex: 1 1 auto; }
+}

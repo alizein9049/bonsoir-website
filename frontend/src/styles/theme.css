@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Bonsoir design tokens
+   - Owner-approved scheme (14 Oct 2026): dark-red page #32000C with green #3F6A2E accents.
+   - All other colours are the PROPOSED palette (pending approval).
+   - Light/dark follows the device setting (data-bs-theme is set in index.html).
+   ========================================================================== */
+
+:root,
+[data-bs-theme='light'] {
+  /* Brand */
+  /* --bn-brand-* are only set when the Owner changes the colours in Branding
+     (see app/BrandingProvider.tsx); otherwise the approved values below apply. */
+  --bn-green: var(--bn-brand-secondary, #3f6a2e);          /* brand green — fills (white text 6.3:1) */
+  --bn-green-hover: var(--bn-brand-secondary-hover, #4a7a36);
+  --bn-green-active: var(--bn-brand-secondary-active, #355a27);
+  --bn-green-text: var(--bn-brand-secondary, #3f6a2e);     /* green as text inside ivory cards (6.2:1) */
+  --bn-red: var(--bn-brand-primary, #32000c);              /* brand dark red */
+  --bn-gold: #d9a441;           /* proposed accent (decorative only on light bg) */
+  --bn-amber: #e98a2b;          /* proposed secondary accent */
+
+  /* Surfaces & text */
+  --bn-bg: var(--bn-brand-primary, #32000c);  /* page background = brand dark red (both modes) */
+  --bn-on-bg: #ffffff;          /* text on the dark red: 18:1 */
+  --bn-on-bg-border: rgba(255, 255, 255, 0.5);
+  --bn-on-bg-divider: rgba(255, 255, 255, 0.22);
+  --bn-on-bg-hover: rgba(255, 255, 255, 0.1);
+  --bn-surface: #fffdf9;        /* soft ivory */
+  --bn-text: #3a2a22;           /* dark brown */
+  --bn-text-muted: #6f625b;     /* warm grey-brown, 5.2:1 on cream */
+  --bn-border: rgba(58, 42, 34, 0.14);
+
+  /* Effects */
+  --bn-glow: rgba(233, 138, 43, 0.14);
+  --bn-logo-ring: rgba(217, 164, 65, 0.55);
+  --bn-logo-shadow: 0 18px 40px -12px rgba(58, 42, 34, 0.45);
+  --bn-focus: #ffffff;          /* focus ring must show against the dark red */
+
+  /* Menu components */
+  --bn-price: var(--bn-brand-primary, #32000c);  /* dark red on ivory 18:1 */
+  --bn-card-shadow: 0 1px 2px rgba(58, 42, 34, 0.06), 0 6px 18px -10px rgba(58, 42, 34, 0.25);
+  --bn-placeholder-bg: #f3eadc;
+  --bn-tab-border: rgba(63, 106, 46, 0.4);
+  --bn-hover: rgba(63, 106, 46, 0.08);
+
+  /* Typography (proposed) */
+  --bn-font-heading: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --bn-font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout */
+  --bn-radius-sm: 10px;
+  --bn-radius: 16px;
+  --bn-radius-pill: 999px;
+  --bn-touch: 44px;             /* minimum touch target */
+  --bn-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ---- Bootstrap mapping (so Bootstrap components inherit the brand) ---- */
+  --bs-body-bg: var(--bn-bg);
+  --bs-body-color: var(--bn-on-bg);
+  --bs-secondary-color: var(--bn-text-muted);
+  --bs-body-font-family: var(--bn-font-body);
+  --bs-primary: var(--bn-green);
+  --bs-primary-rgb: var(--bn-brand-secondary-rgb, 63, 106, 46);
+  --bs-link-color: var(--bn-green-text);
+  --bs-link-color-rgb: var(--bn-brand-secondary-rgb, 63, 106, 46);
+  --bs-link-hover-color: var(--bn-green-hover);
+  --bs-border-color: var(--bn-border);
+  --bs-focus-ring-color: rgba(63, 106, 46, 0.35);
+}
+
+[data-bs-theme='dark'] {
+  --bn-green: var(--bn-brand-secondary, #3f6a2e);          /* button fill stays brand green (white text 6.3:1) */
+  --bn-green-hover: var(--bn-brand-secondary-hover, #4a7a36);
+  --bn-green-active: var(--bn-brand-secondary-active, #355a27);
+  --bn-green-text: var(--bn-brand-secondary-tint, #9bc97a); /* lighter tint for text/outlines on espresso (8:1) */
+  --bn-gold: #e3b65a;
+  --bn-amber: #f09a45;
+
+  --bn-bg: var(--bn-brand-primary, #32000c);  /* same dark-red page background in dark mode */
+  --bn-surface: #4a1820;        /* wine-brown cards, distinct from the page */
+  --bn-text: #f7f1e8;
+  --bn-text-muted: #cbbbae;
+  --bn-border: rgba(247, 241, 232, 0.14);
+
+  --bn-glow: rgba(233, 138, 43, 0.16);
+  --bn-logo-ring: rgba(227, 182, 90, 0.6);
+  --bn-logo-shadow: 0 18px 48px -10px rgba(0, 0, 0, 0.7), 0 0 60px -10px rgba(233, 138, 43, 0.35);
+  --bn-focus: #ffffff;
+
+  --bn-price: #e3b65a;                     /* gold on wine cards */
+  --bn-card-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 20px -12px rgba(0, 0, 0, 0.6);
+  --bn-placeholder-bg: #5a2530;
+  --bn-tab-border: rgba(155, 201, 122, 0.45);
+  --bn-hover: rgba(155, 201, 122, 0.1);
+
+  --bs-body-bg: var(--bn-bg);
+  --bs-body-color: var(--bn-on-bg);
+  --bs-secondary-color: var(--bn-text-muted);
+  --bs-link-color: var(--bn-green-text);
+  --bs-link-color-rgb: 155, 201, 122;
+  --bs-link-hover-color: #b3d89a;
+  --bs-border-color: var(--bn-border);
+  --bs-focus-ring-color: rgba(227, 182, 90, 0.4);
+}
+
+/* Bootstrap's .btn-primary compiles its colours to fixed hex values,
+   so its component variables are re-pointed at the brand tokens here. */
+.btn-primary {
+  --bs-btn-bg: var(--bn-green);
+  --bs-btn-border-color: var(--bn-green);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: var(--bn-green-hover);
+  --bs-btn-hover-border-color: var(--bn-green-hover);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: var(--bn-green-active);
+  --bs-btn-active-border-color: var(--bn-green-active);
+  --bs-btn-active-color: #fff;
+  --bs-btn-focus-shadow-rgb: var(--bn-brand-secondary-rgb, 63, 106, 46);
+  --bs-btn-disabled-bg: var(--bn-green);
+  --bs-btn-disabled-border-color: var(--bn-green);
+}
+

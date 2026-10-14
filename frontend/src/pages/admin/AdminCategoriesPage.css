@@ -1,0 +1,59 @@
+.bn-cat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.bn-cat {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  grid-template-areas:
+    'pos info'
+    'pos visible'
+    'actions actions';
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background: var(--bn-admin-surface);
+  border: 1px solid var(--bn-admin-border);
+  border-radius: 14px;
+}
+.bn-cat.is-hidden { border-style: dashed; }
+.bn-cat__pos {
+  grid-area: pos;
+  align-self: start;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: var(--bn-admin-hover);
+}
+.bn-cat__info { grid-area: info; min-width: 0; }
+.bn-cat__name { display: block; font-weight: 600; font-size: 1.02rem; }
+.bn-cat.is-hidden .bn-cat__name { color: var(--bn-admin-muted); }
+.bn-cat__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--bn-admin-muted); }
+.bn-hidden-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px dashed var(--bn-admin-muted);
+}
+.bn-cat__visible { grid-area: visible; justify-content: flex-start; }
+.bn-cat .bn-switch { display: inline-flex; align-items: center; gap: 0.5rem; min-height: var(--bn-touch); padding-left: 0; margin: 0; }
+.bn-cat .bn-switch .form-check-input { float: none; margin: 0; width: 46px; height: 26px; cursor: pointer; }
+.bn-cat__actions { grid-area: actions; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.bn-cat__actions .btn { display: inline-flex; align-items: center; justify-content: center; }
+.bn-icon-btn { width: var(--bn-touch); padding: 0; }
+
+@media (min-width: 768px) {
+  .bn-cat {
+    grid-template-columns: 2rem minmax(0, 1fr) auto auto;
+    grid-template-areas: 'pos info visible actions';
+  }
+  .bn-cat__pos { align-self: center; }
+}

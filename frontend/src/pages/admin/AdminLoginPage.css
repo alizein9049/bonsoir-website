@@ -1,0 +1,18 @@
+.bn-auth-submit {
+  min-height: 48px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+.bn-auth-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--bn-touch);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.bn-auth-alert {
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+.bn-auth-alert:focus { outline: none; }
+.bn-auth-alert:focus-visible { outline: 3px solid var(--bn-focus); outline-offset: 2px; }

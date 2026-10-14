@@ -1,0 +1,42 @@
+.bn-brand-form { display: grid; gap: 1rem; max-width: 720px; }
+.bn-brand-card {
+  padding: 1rem 1.1rem;
+  background: var(--bn-admin-surface);
+  border: 1px solid var(--bn-admin-border);
+  border-radius: 14px;
+}
+.bn-brand-card__title { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.8rem; }
+.bn-brand-logo { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.bn-brand-logo__img { width: 96px; }
+.bn-color-row { margin-bottom: 1rem; }
+.bn-color-inputs { display: flex; gap: 0.5rem; align-items: center; }
+.bn-color-swatch {
+  width: var(--bn-touch);
+  height: var(--bn-touch);
+  padding: 2px;
+  border: 1px solid var(--bn-admin-border);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+.bn-color-code { max-width: 9rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; min-height: var(--bn-touch); }
+.bn-field-error { margin: 0.4rem 0 0; font-size: 0.85rem; color: var(--bs-form-invalid-color); }
+.bn-brand-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--bn-bg);
+  color: #fff;
+}
+.bn-brand-preview__text { font-family: var(--bn-font-heading); font-weight: 600; }
+.bn-brand-preview__btn {
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: var(--bn-green);
+  color: #fff;
+  font-weight: 600;
+}
+.bn-brand-actions { display: flex; justify-content: flex-end; }

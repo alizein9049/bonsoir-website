@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Admin area — clean, neutral look with brand-green accents (approved).
+   Everything inside .bn-admin re-maps the tokens, so Bootstrap form controls,
+   text and focus rings use the neutral admin palette instead of the dark-red
+   customer background.
+   ========================================================================== */
+.bn-admin {
+  --bn-admin-bg: #f4f4f1;
+  --bn-admin-surface: #ffffff;
+  --bn-admin-text: #2b2724;        /* 14:1 on white */
+  --bn-admin-muted: #625b55;       /* 6.4:1 on white */
+  --bn-admin-border: #dcd8d2;
+  --bn-admin-hover: rgba(63, 106, 46, 0.09);
+  --bn-placeholder-bg: #f3eadc;
+  --bn-text: var(--bn-admin-text);
+  --bn-text-muted: var(--bn-admin-muted);
+  --bn-focus: #3f6a2e;
+  --bs-body-bg: var(--bn-admin-surface);
+  --bs-body-color: var(--bn-admin-text);
+  --bs-secondary-color: var(--bn-admin-muted);
+  --bs-border-color: var(--bn-admin-border);
+  --bs-link-color: #3f6a2e;
+  --bs-link-color-rgb: 63, 106, 46;
+  --bs-link-hover-color: #355a27;
+  --bs-link-hover-color-rgb: 53, 90, 39;
+  --bs-form-invalid-color: #b42318;      /* 5.6:1 on white */
+  --bs-form-invalid-border-color: #b42318;
+
+  min-height: 100vh;
+  min-height: 100svh;
+  background: var(--bn-admin-bg);
+  color: var(--bn-admin-text);
+}
+
+[data-bs-theme='dark'] .bn-admin {
+  --bn-admin-bg: #191817;
+  --bn-admin-surface: #242220;
+  --bn-admin-text: #f1eeea;
+  --bn-admin-muted: #b9b2aa;       /* 7.9:1 on surface */
+  --bn-admin-border: #3b3835;
+  --bn-admin-hover: rgba(155, 201, 122, 0.1);
+  --bn-placeholder-bg: #2f2c29;
+  --bn-focus: #9bc97a;
+  --bs-link-color: #9bc97a;
+  --bs-link-color-rgb: 155, 201, 122;
+  --bs-link-hover-color: #b3d89a;
+  --bs-link-hover-color-rgb: 179, 216, 154;
+  --bs-form-invalid-color: #ff8a80;
+  --bs-form-invalid-border-color: #ff8a80;
+}
+
+.bn-admin .form-control {
+  min-height: var(--bn-touch);
+  border-color: var(--bn-admin-border);
+}
+.bn-admin .form-control:focus {
+  border-color: var(--bn-green);
+  box-shadow: 0 0 0 0.2rem rgba(63, 106, 46, 0.25);
+}
+.bn-admin .form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Switches (Featured) in brand green */
+.bn-admin .form-check-input:checked {
+  background-color: var(--bn-green);
+  border-color: var(--bn-green);
+}
+.bn-admin .form-check-input:focus {
+  border-color: var(--bn-green);
+  box-shadow: 0 0 0 0.2rem rgba(63, 106, 46, 0.25);
+}
+.bn-admin .form-select {
+  min-height: var(--bn-touch);
+  border-color: var(--bn-admin-border);
+}
+
+/* Secondary outline buttons: readable in both themes (Bootstrap's grey is too faint on dark) */
+.bn-admin .btn-outline-secondary {
+  --bs-btn-color: var(--bn-admin-text);
+  --bs-btn-border-color: var(--bn-admin-border);
+  --bs-btn-hover-color: var(--bn-admin-text);
+  --bs-btn-hover-bg: var(--bn-admin-hover);
+  --bs-btn-hover-border-color: var(--bn-admin-muted);
+  --bs-btn-active-color: var(--bn-admin-text);
+  --bs-btn-active-bg: var(--bn-admin-hover);
+  --bs-btn-active-border-color: var(--bn-admin-muted);
+  --bs-btn-disabled-color: var(--bn-admin-muted);
+}
+[data-bs-theme='dark'] .bn-admin .btn-outline-danger {
+  --bs-btn-color: #ff8a80;
+  --bs-btn-border-color: rgba(255, 138, 128, 0.6);
+  --bs-btn-hover-color: #1b1b1a;
+  --bs-btn-hover-bg: #ff8a80;
+  --bs-btn-hover-border-color: #ff8a80;
+}
+
+/* Behind the admin area (e.g. phone overscroll) show the neutral admin colour, not the dark-red customer background. */
+body:has(.bn-admin) { background-color: #f4f4f1; }
+[data-bs-theme='dark'] body:has(.bn-admin) { background-color: #191817; }

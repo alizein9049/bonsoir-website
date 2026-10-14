@@ -1,0 +1,418 @@
+{
+  "categories": [
+    {
+      "name": "Smoothies",
+      "slug": "smoothies",
+      "items": [
+        {
+          "name": "Strawberry Smoothie",
+          "slug": "strawberry-smoothie",
+          "description": "Strawberry smoothie topped with fresh fruit, perfect for a healthy lifestyle.",
+          "price": "5.00"
+        },
+        {
+          "name": "Mango Smoothie",
+          "slug": "mango-smoothie",
+          "description": "A refreshing glass of mango Smoothie .",
+          "price": "5.00"
+        },
+        {
+          "name": "Mixed Berry Smoothie",
+          "slug": "mixed-berry-smoothie",
+          "description": "Mixed berry smoothie with fresh mint and berries, perfect for a summer refreshment.",
+          "price": "5.00"
+        },
+        {
+          "name": "Passion Smoothie",
+          "slug": "passion-smoothie",
+          "description": "A refreshing glass of Passion Smoothie .",
+          "price": "5.00"
+        },
+        {
+          "name": "Mojito",
+          "slug": "mojito",
+          "description": "Choose Your Flavor .",
+          "price": "5.00"
+        },
+        {
+          "name": "Tropical Smoothie",
+          "slug": "tropical-smoothie",
+          "description": "Tropical smoothie with fresh fruits, perfect for a summer refreshment.",
+          "price": "5.00"
+        }
+      ]
+    },
+    {
+      "name": "Hot Drinks",
+      "slug": "hot-drinks",
+      "items": [
+        {
+          "name": "Tea",
+          "slug": "tea",
+          "description": "Experience authentic Turkish tea",
+          "price": "1.50"
+        },
+        {
+          "name": "Espresso",
+          "slug": "espresso",
+          "description": "Fresh espresso Served With Love",
+          "price": "1.00"
+        },
+        {
+          "name": "Hot Chocolate",
+          "slug": "hot-chocolate",
+          "description": "Taste The Real Chocolate .",
+          "price": "1.75"
+        },
+        {
+          "name": "Cappucino",
+          "slug": "cappucino",
+          "description": "Warm cappuccino .",
+          "price": "1.50"
+        },
+        {
+          "name": "Coffee Latte",
+          "slug": "coffee-latte",
+          "description": "Taste The Best Flavors (Caramel,Mocha,Hazelnut)",
+          "price": "5.00"
+        },
+        {
+          "name": "Nesquick",
+          "slug": "nesquick",
+          "description": "Warm Cup Of Special Nesquik.",
+          "price": "1.50"
+        },
+        {
+          "name": "Nescafe",
+          "slug": "nescafe",
+          "description": "Warm Nescafe.",
+          "price": "1.75"
+        },
+        {
+          "name": "Tea Pot",
+          "slug": "tea-pot",
+          "description": "2 People.",
+          "price": "3.00"
+        },
+        {
+          "name": "Tea Pot",
+          "slug": "tea-pot-2",
+          "description": "4 People.",
+          "price": "4.50"
+        },
+        {
+          "name": "Arabic Coffee Pot",
+          "slug": "arabic-coffee-pot",
+          "description": "2 People.",
+          "price": "2.50"
+        },
+        {
+          "name": "Arabic Coffee Pot",
+          "slug": "arabic-coffee-pot-2",
+          "description": "4 People.",
+          "price": "4.00"
+        }
+      ]
+    },
+    {
+      "name": "Cold Drinks",
+      "slug": "cold-drinks",
+      "items": [
+        {
+          "name": "Iced Coffee",
+          "slug": "iced-coffee",
+          "description": "Refreshing iced coffee with your choice of flavor (Caramel,Mocha,Hazelnut).",
+          "price": "5.00"
+        },
+        {
+          "name": "Carrot",
+          "slug": "carrot",
+          "description": "Fresh carrot juice, naturally sweet and refreshing.",
+          "price": "3.50"
+        },
+        {
+          "name": "Lemonade",
+          "slug": "lemonade",
+          "description": null,
+          "price": "3.50"
+        },
+        {
+          "name": "Fresh Fruit Blends",
+          "slug": "fresh-fruit-blends",
+          "description": "Fresh, fruity, and bursting with tropical flavor. (Mango,Cocktail,Strawberry).",
+          "price": "3.50"
+        },
+        {
+          "name": "Orange",
+          "slug": "orange",
+          "description": "Fresh Orange juice, naturally sweet and refreshing.",
+          "price": "3.50"
+        },
+        {
+          "name": "Waterrmelon Lemonade",
+          "slug": "waterrmelon-lemonade",
+          "description": "Fresh watermelon and zesty lemonade, perfectly refreshing.",
+          "price": "3.50"
+        },
+        {
+          "name": "Passion Berries",
+          "slug": "passion-berries",
+          "description": "A refreshing blend of passion fruit and sweet berries.",
+          "price": "4.50"
+        },
+        {
+          "name": "Iced Tea",
+          "slug": "iced-tea",
+          "description": "Refreshing iced tea with a smooth, fruity twist.",
+          "price": "3.50"
+        },
+        {
+          "name": "Passion Berries Ice Tea",
+          "slug": "passion-berries-ice-tea",
+          "description": "Refreshing iced tea with a sweet passion fruit and berry twist.",
+          "price": "4.00"
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "slug": "beverages",
+      "items": [
+        {
+          "name": "Freeze",
+          "slug": "freeze",
+          "description": "Refreshing Drink With Flavors.",
+          "price": "1.50"
+        },
+        {
+          "name": "Dark Blue",
+          "slug": "dark-blue",
+          "description": "Iced Energy Drink .",
+          "price": "1.50"
+        },
+        {
+          "name": "Boom Boom",
+          "slug": "boom-boom",
+          "description": "Iced Energy Drink .",
+          "price": "1.50"
+        },
+        {
+          "name": "Extra Juice",
+          "slug": "extra-juice",
+          "description": "Refreshing Fruits Drink.",
+          "price": "1.00"
+        },
+        {
+          "name": "Cola",
+          "slug": "cola",
+          "description": "Pepsi,7UP,Miranda.",
+          "price": "1.00"
+        },
+        {
+          "name": "Sparkling Water",
+          "slug": "sparkling-water",
+          "description": "Rim Sparkling Water .",
+          "price": "1.50"
+        },
+        {
+          "name": "Delster",
+          "slug": "delster",
+          "description": null,
+          "price": "2.00"
+        },
+        {
+          "name": "Large Water",
+          "slug": "large-water",
+          "description": "Large Bottle .",
+          "price": "1.50"
+        },
+        {
+          "name": "Small Water",
+          "slug": "small-water",
+          "description": "Small Bottle .",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "name": "Milkshakes",
+      "slug": "milkshakes",
+      "items": [
+        {
+          "name": "Caramel Milkshake",
+          "slug": "caramel-milkshake",
+          "description": "A rich, cold, and sweet blend of vanilla ice cream, milk, and caramel sauce, topped with whipped cream.",
+          "price": "5.50"
+        },
+        {
+          "name": "Chocolate Milkshake",
+          "slug": "chocolate-milkshake",
+          "description": "A rich, velvety blend of milk, vanilla or chocolate ice cream, and deep cocoa syrup, topped with whipped cream.",
+          "price": "5.50"
+        },
+        {
+          "name": "Strawberry Milkshake",
+          "slug": "strawberry-milkshake",
+          "description": "A classic, sweet, and fruity treat made with fresh strawberries or strawberry syrup blended into creamy vanilla ice cream and milk.",
+          "price": "5.50"
+        },
+        {
+          "name": "Kinder Milkshake",
+          "slug": "kinder-milkshake",
+          "description": "A smooth, milky, and ultra-sweet shake inspired by Kinder chocolate, featuring a rich blend of milk chocolate, hazelnut cream, and a milky white chocolate drizzle.",
+          "price": "6.00"
+        },
+        {
+          "name": "Mix Berries Milkshake",
+          "slug": "mix-berries-milkshake",
+          "description": "A vibrant, refreshing, and tangy-sweet shake made by blending cold milk and ice cream with a tart assortment of strawberries, blueberries, and raspberries.",
+          "price": "5.50"
+        },
+        {
+          "name": "Nutella Milkshake",
+          "slug": "nutella-milkshake",
+          "description": "A thick, decadent shake combining chocolate ice cream, milk, and a generous scoop of hazelnut Nutella spread.",
+          "price": "5.50"
+        },
+        {
+          "name": "Lotus Milkshake",
+          "slug": "lotus-milkshake",
+          "description": "A creamy, spiced milkshake blended with crushed Lotus Biscoff cookies and cookie butter spread for a distinct caramelized-cinnamon kick.",
+          "price": "5.50"
+        },
+        {
+          "name": "Musk & Amber Milkshake",
+          "slug": "musk-amber-milkshake",
+          "description": "Creamy, aromatic, and irresistibly rich — a perfect blend of musk, amber & mastic.",
+          "price": "5.50"
+        }
+      ]
+    },
+    {
+      "name": "Chips/Treats",
+      "slug": "chips-treats",
+      "items": [
+        {
+          "name": "Chips",
+          "slug": "chips",
+          "description": "Medium Dolsi.",
+          "price": "0.50"
+        },
+        {
+          "name": "Pringles",
+          "slug": "pringles",
+          "description": "Small Pringles.",
+          "price": "1.50"
+        },
+        {
+          "name": "Mars",
+          "slug": "mars",
+          "description": "Chocolate Bar.",
+          "price": "1.00"
+        },
+        {
+          "name": "Snickers",
+          "slug": "snickers",
+          "description": "Chocolate Bar.",
+          "price": "1.00"
+        },
+        {
+          "name": "Twix",
+          "slug": "twix",
+          "description": "Chocolate Bar.",
+          "price": "1.00"
+        }
+      ]
+    },
+    {
+      "name": "Dessert",
+      "slug": "dessert",
+      "items": [
+        {
+          "name": "Cheesecake",
+          "slug": "cheesecake",
+          "description": "Creamy, smooth cheesecake with a rich and delicious flavor (Strawberry Mango/lotus).",
+          "price": "3.50"
+        },
+        {
+          "name": "Mini Tart",
+          "slug": "mini-tart",
+          "description": "Delicate mini tarts with a sweet, delicious filling.",
+          "price": "1.50"
+        },
+        {
+          "name": "Tiramisu",
+          "slug": "tiramisu",
+          "description": null,
+          "price": "3.50"
+        }
+      ]
+    },
+    {
+      "name": "Sajj",
+      "slug": "sajj",
+      "items": [
+        {
+          "name": "Cocktail",
+          "slug": "cocktail",
+          "description": "A flavorful mix of cheese, zaatar, and fresh toppings.",
+          "price": "1.75"
+        },
+        {
+          "name": "Jebneh",
+          "slug": "jebneh",
+          "description": "Warm saj topped with delicious melted cheese.",
+          "price": "2.50"
+        },
+        {
+          "name": "Keshek",
+          "slug": "keshek",
+          "description": "Traditional saj topped with rich and tangy kishk.",
+          "price": "3.00"
+        },
+        {
+          "name": "Nutella",
+          "slug": "nutella",
+          "description": "Warm saj filled with smooth and creamy Nutella.",
+          "price": "3.00"
+        },
+        {
+          "name": "Zaatar",
+          "slug": "zaatar",
+          "description": "Classic saj topped with aromatic zaatar.",
+          "price": "1.50"
+        }
+      ]
+    },
+    {
+      "name": "Shisha",
+      "slug": "shisha",
+      "items": [
+        {
+          "name": "Lemon & Mint Shisha",
+          "slug": "lemon-mint-shisha",
+          "description": null,
+          "price": "5.50"
+        },
+        {
+          "name": "Nakhleh Two Apples Shisha",
+          "slug": "nakhleh-two-apples-shisha",
+          "description": "A stylish hookah with a Special Two Apples Flavor, Served With Love.",
+          "price": "5.50"
+        },
+        {
+          "name": "Grape Shisha",
+          "slug": "grape-shisha",
+          "description": "A stylish hookah with a Special Grape Flavor, Served With Love.",
+          "price": "5.50"
+        },
+        {
+          "name": "Charcoal Service",
+          "slug": "charcoal-service",
+          "description": "Hookah Columbia charcoal ,",
+          "price": "3.50"
+        }
+      ]
+    }
+  ]
+}
